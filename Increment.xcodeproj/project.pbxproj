@@ -17,7 +17,7 @@
 		4250AEBD2926C2A700DABC0B /* DropdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEBC2926C2A700DABC0B /* DropdownView.swift */; };
 		4250AEBF2926D5BE00DABC0B /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEBE2926D5BE00DABC0B /* RemindView.swift */; };
 		4250AEC22926D7AD00DABC0B /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEC12926D7AD00DABC0B /* CreateChallengeViewModel.swift */; };
-		4250AEC62926D87500DABC0B /* DropdownItemProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEC52926D87500DABC0B /* DropdownItemProtocol.swift */; };
+		4250AEC62926D87500DABC0B /* DropdownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEC52926D87500DABC0B /* DropdownProtocol.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,7 +32,7 @@
 		4250AEBC2926C2A700DABC0B /* DropdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownView.swift; sourceTree = "<group>"; };
 		4250AEBE2926D5BE00DABC0B /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		4250AEC12926D7AD00DABC0B /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
-		4250AEC52926D87500DABC0B /* DropdownItemProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownItemProtocol.swift; sourceTree = "<group>"; };
+		4250AEC52926D87500DABC0B /* DropdownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownProtocol.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				4250AEC12926D7AD00DABC0B /* CreateChallengeViewModel.swift */,
-				4250AEC52926D87500DABC0B /* DropdownItemProtocol.swift */,
+				4250AEC52926D87500DABC0B /* DropdownProtocol.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -169,7 +169,7 @@
 				4250AEB52926B74400DABC0B /* PrimaryButtonStyle.swift in Sources */,
 				4250AEA92926B17600DABC0B /* LandingView.swift in Sources */,
 				4250AEA72926B17600DABC0B /* IncrementApp.swift in Sources */,
-				4250AEC62926D87500DABC0B /* DropdownItemProtocol.swift in Sources */,
+				4250AEC62926D87500DABC0B /* DropdownProtocol.swift in Sources */,
 				4250AEB72926B84100DABC0B /* Color+Extension.swift in Sources */,
 				4250AEC22926D7AD00DABC0B /* CreateChallengeViewModel.swift in Sources */,
 				4250AEBF2926D5BE00DABC0B /* RemindView.swift in Sources */,

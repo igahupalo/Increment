@@ -7,11 +7,11 @@
 
 import Foundation
 
-protocol DropdownItemProtocol {
+protocol DropdownProtocol {
     var options: [DropdownOption] { get }
     var headerTitle: String { get }
     var dropdownTitle: String { get }
-    var isSelected: Bool { get set }
+    var isFocused: Bool { get set }
 }
 
 protocol DropdownOptionProtocol {

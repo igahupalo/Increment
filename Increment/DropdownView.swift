@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct DropdownView<T: DropdownItemProtocol>: View {
+struct DropdownView<T: DropdownProtocol>: View {
     @Binding var viewModel: T
     var body: some View {
         VStack {
@@ -18,7 +18,7 @@ struct DropdownView<T: DropdownItemProtocol>: View {
             }.padding(.vertical, 10)
 
             Button(action: {
-                viewModel.isSelected = true
+                viewModel.isFocused = true
             }) {
                 HStack {
                     Text(viewModel.dropdownTitle)

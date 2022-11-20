@@ -17,6 +17,15 @@ struct CreateView: View {
         }
     }
 
+    var actionSheet: ActionSheet {
+        ActionSheet(title: Text("Select"), buttons: viewModel.focusedDropdownOptions.indices.map { index in
+            let option = viewModel.focusedDropdownOptions[index]
+            return .default(Text(option.formattedValue)) {
+                viewModel.send(.selectOption(index: index))
+            }
+        })
+    }
+
     var body: some View {
         ScrollView {
             VStack {
@@ -30,9 +39,18 @@ struct CreateView: View {
                             .font(.system(size: 24, weight: .medium))
                     }
                 }
-            }.navigationBarTitle("Create")
-                .navigationBarBackButtonHidden(true)
-                .padding(.bottom, 15)
+            }
+            .actionSheet(isPresented: Binding<Bool>(
+                get: {
+                    viewModel.hasFocusedDropdown
+                },
+                set: { _ in }), content: { () -> ActionSheet in
+                    actionSheet
+                })
+            .navigationBarTitle(viewModel.title)
+            .navigationBarBackButtonHidden(true)
+            .navigationBarTitleDisplayMode(.large)
+            .padding(.bottom, 15)
         }
     }
 }
