@@ -18,9 +18,12 @@
 		4250AEBF2926D5BE00DABC0B /* RemindView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEBE2926D5BE00DABC0B /* RemindView.swift */; };
 		4250AEC22926D7AD00DABC0B /* CreateChallengeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEC12926D7AD00DABC0B /* CreateChallengeViewModel.swift */; };
 		4250AEC62926D87500DABC0B /* DropdownProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4250AEC52926D87500DABC0B /* DropdownProtocol.swift */; };
+		4250AEC8292AB3A300DABC0B /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4250AEC7292AB3A300DABC0B /* GoogleService-Info.plist */; };
+		716C57540D3A6800CAD12C8D /* Pods_Increment.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A2B18212631BF3DCEFD178B /* Pods_Increment.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3BA9B23FE04A69F7DEF52C39 /* Pods-Increment.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.debug.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.debug.xcconfig"; sourceTree = "<group>"; };
 		4250AEA32926B17600DABC0B /* Increment.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Increment.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4250AEA62926B17600DABC0B /* IncrementApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IncrementApp.swift; sourceTree = "<group>"; };
 		4250AEA82926B17600DABC0B /* LandingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LandingView.swift; sourceTree = "<group>"; };
@@ -33,6 +36,9 @@
 		4250AEBE2926D5BE00DABC0B /* RemindView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RemindView.swift; sourceTree = "<group>"; };
 		4250AEC12926D7AD00DABC0B /* CreateChallengeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateChallengeViewModel.swift; sourceTree = "<group>"; };
 		4250AEC52926D87500DABC0B /* DropdownProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropdownProtocol.swift; sourceTree = "<group>"; };
+		4250AEC7292AB3A300DABC0B /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		5A2B18212631BF3DCEFD178B /* Pods_Increment.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Increment.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B487BFD594F852C70382671D /* Pods-Increment.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Increment.release.xcconfig"; path = "Target Support Files/Pods-Increment/Pods-Increment.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,17 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				716C57540D3A6800CAD12C8D /* Pods_Increment.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0A0394446954782BFFE820A0 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				3BA9B23FE04A69F7DEF52C39 /* Pods-Increment.debug.xcconfig */,
+				B487BFD594F852C70382671D /* Pods-Increment.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		4250AE9A2926B17600DABC0B = {
 			isa = PBXGroup;
 			children = (
 				4250AEA52926B17600DABC0B /* Increment */,
 				4250AEA42926B17600DABC0B /* Products */,
+				0A0394446954782BFFE820A0 /* Pods */,
+				C61CDC47DE2A59FF803AB87B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -65,6 +84,7 @@
 		4250AEA52926B17600DABC0B /* Increment */ = {
 			isa = PBXGroup;
 			children = (
+				4250AEC7292AB3A300DABC0B /* GoogleService-Info.plist */,
 				4250AEC02926D78F00DABC0B /* ViewModels */,
 				4250AEA62926B17600DABC0B /* IncrementApp.swift */,
 				4250AEA82926B17600DABC0B /* LandingView.swift */,
@@ -96,6 +116,14 @@
 			path = ViewModels;
 			sourceTree = "<group>";
 		};
+		C61CDC47DE2A59FF803AB87B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A2B18212631BF3DCEFD178B /* Pods_Increment.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -103,9 +131,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4250AEB12926B17700DABC0B /* Build configuration list for PBXNativeTarget "Increment" */;
 			buildPhases = (
+				4DEFAD28DD8114FDD5347CF5 /* [CP] Check Pods Manifest.lock */,
 				4250AE9F2926B17600DABC0B /* Sources */,
 				4250AEA02926B17600DABC0B /* Frameworks */,
 				4250AEA12926B17600DABC0B /* Resources */,
+				DE8DCA2ACDC85DE7450E8562 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -156,10 +186,53 @@
 			files = (
 				4250AEAE2926B17700DABC0B /* Preview Assets.xcassets in Resources */,
 				4250AEB92926BE5600DABC0B /* Assets.xcassets in Resources */,
+				4250AEC8292AB3A300DABC0B /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4DEFAD28DD8114FDD5347CF5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Increment-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DE8DCA2ACDC85DE7450E8562 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Increment/Pods-Increment-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		4250AE9F2926B17600DABC0B /* Sources */ = {
@@ -297,6 +370,7 @@
 		};
 		4250AEB22926B17700DABC0B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3BA9B23FE04A69F7DEF52C39 /* Pods-Increment.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -326,6 +400,7 @@
 		};
 		4250AEB32926B17700DABC0B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B487BFD594F852C70382671D /* Pods-Increment.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
